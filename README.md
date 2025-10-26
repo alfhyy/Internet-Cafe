@@ -2,19 +2,6 @@
 
 A simple Java-based billing system for managing internet cafe sessions, food orders, and payment calculations.
 
-## 📋 Table of Contents
-
-- [About](#about)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Code Refactoring Techniques](#code-refactoring-techniques)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 📖 About
 
 This project is an Internet Cafe management system that handles customer billing, including internet bundle packages, food orders, and additional charges. The system automatically calculates taxes (PPN 15%) and provides a complete billing summary.
@@ -120,27 +107,3 @@ This project implements several refactoring techniques:
 4. **Introduce Method**: `priceCalculation()` method for base price + tax
 5. **Move Members**: Main method moved to separate `MainApp` class
 
-## 📚 API Documentation
-
-### InternetCafe Class
-
-#### Constructor
-```java
-InternetCafe(String customerName, String bundle, String seatNumber, double price)
-```
-
-#### Methods
-- `void orderFood(String item, float price)` - Add food order
-- `void adBil(float bil)` - Add additional billing charge
-- `double calculateTotal()` - Calculate total amount to pay
-- `void memberInfo()` - Display complete billing information
-
-### customerAction Interface
-```java
-void orderFood(String item, float price)
-```
-
-For complete JavaDoc documentation, generate docs using:
-```bash
-javadoc -d docs internet_cafe_refactored/*.java
-```
