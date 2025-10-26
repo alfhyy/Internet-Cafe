@@ -107,27 +107,3 @@ This project implements several refactoring techniques:
 4. **Introduce Method**: `priceCalculation()` method for base price + tax
 5. **Move Members**: Main method moved to separate `MainApp` class
 
-## 📚 API Documentation
-
-### InternetCafe Class
-
-#### Constructor
-```java
-InternetCafe(String customerName, String bundle, String seatNumber, double price)
-```
-
-#### Methods
-- `void orderFood(String item, float price)` - Add food order
-- `void adBil(float bil)` - Add additional billing charge
-- `double calculateTotal()` - Calculate total amount to pay
-- `void memberInfo()` - Display complete billing information
-
-### customerAction Interface
-```java
-void orderFood(String item, float price)
-```
-
-For complete JavaDoc documentation, generate docs using:
-```bash
-javadoc -d docs internet_cafe_refactored/*.java
-```
