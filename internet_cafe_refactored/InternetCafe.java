@@ -27,7 +27,7 @@ public class InternetCafe implements customerAction {
     /** The assigned seat number for the customer (e.g., "PC-12") */
     private String seatNumber;
 
-    /** The base price of the selected bundle before tax */
+    /** The base price of the selected bundle before tax prabowo */
     private double price;
 
     /** List of food orders made by the customer with their prices */
