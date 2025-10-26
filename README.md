@@ -2,19 +2,6 @@
 
 A simple Java-based billing system for managing internet cafe sessions, food orders, and payment calculations.
 
-## 📋 Table of Contents
-
-- [About](#about)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Code Refactoring Techniques](#code-refactoring-techniques)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 📖 About
 
 This project is an Internet Cafe management system that handles customer billing, including internet bundle packages, food orders, and additional charges. The system automatically calculates taxes (PPN 15%) and provides a complete billing summary.
