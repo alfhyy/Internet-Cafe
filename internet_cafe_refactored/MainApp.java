@@ -1,5 +1,8 @@
 package internet_cafe_refactored;
 
+import javax.xml.namespace.QName;
+import java.util.Scanner;
+
 /**
  * Main class to launch the Internet Cafe program
  *
@@ -19,7 +22,13 @@ public class MainApp {
      * @param args for arguments (only for main class)
      */
     public static void main(String[] args) { //move members
-        InternetCafe customer = new InternetCafe("Hapis", "Paket Hikki (10 jam)", "PC-12", 15000);
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("input name: ");
+        String name = sc.nextLine();
+
+        InternetCafe customer = new InternetCafe(name, "Paket Hikki (10 jam)", "PC-12", 15000);
+
         customer.adBil(5000);
         customer.orderFood("Instant Noodles", 10000);
         customer.orderFood("Caffe Latte", 8000);
